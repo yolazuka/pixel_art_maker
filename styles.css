@@ -1,0 +1,128 @@
+body {
+
+    background: url(images/Space_Invaders.png);
+    margin: 0;
+    height: 500px;
+    text-align: left;
+    font-family: 'Spectral SC', serif;
+    font-family: 'Open Sans', sans-serif;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position: left;
+    background-color: white;
+  }
+
+#header {
+  background: url(images/cuadricula.png);
+  background-repeat: repeat;
+  background-color: black;
+  text-align:center;
+  max-height: 250px;
+  padding: 0.1em;
+  border-radius: 10px;
+  border-top-width: thin;
+  border-right-width: thin;
+  border-bottom-width: thin;
+  border-left-width: thin;
+  border: 2px solid #ffffe6;
+}
+
+h1:first-of-type {
+    margin: auto;
+    font-family: Monoton;
+    color: #ffffe6;
+    font-size: 70px;
+
+}
+#design {
+   margin: auto;
+   padding: 0.2em;
+   font-style: italic;
+   font-size: 42px;
+   color: white;
+   font-family: 'Cookie', cursive;
+   letter-spacing: 2.9px;
+
+}
+
+h2 {
+    color: black;
+    margin: 1em 0 0.25em;
+    display: block;
+    font-size: 16px;
+
+}
+
+h2:first-of-type {
+    margin-top: 0.0em;
+    margin-right: 0.5em;
+    font-size: 17 px;
+
+}
+
+#SideBarPanel {
+
+  background-repeat: repeat;
+  border-radius: 10px;
+  padding-top: 1.5em;
+  padding-left: 1.3em;
+  background-color: grey;
+  min-height: 500px;
+  width: 160px;
+  opacity: 0.8;
+  color: white;
+  border-radius: 10px;
+  border-top-width: thin;
+  border-right-width: thin;
+  border-bottom-width: thin;
+  border-left-width: thin;
+  border: 2px solid #ffffe6;
+}
+
+#sizePicker {
+  color: black;
+  font-size: 13px;
+  display: block;
+  padding-right: 3px;
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tr {
+    height: 15px;
+}
+
+td {
+    width: 15px;
+}
+
+input[type=number] {
+    width: 3em;
+}
+input[type=submit] {
+    width: 130px;
+    margin: 0 auto;
+    background-color: black;
+    border: 4px solid white;
+    color: white;
+    border-radius: 4px;
+}
+input[type=color] {
+    width: 125px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+hr {
+  margin: 0;
+  padding: 0;
+  opacity: 0.5;
+}
