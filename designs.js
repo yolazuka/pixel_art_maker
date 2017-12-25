@@ -1,4 +1,4 @@
-// Select color input
+/ Select color input
 // Select size input
 // When size is submitted by the user, call makeGrid()
 //We gather all the function into a major function to get it on the document.ready
@@ -38,12 +38,14 @@ grid.on("click", "td",  function () {
   $(this).css('background', color);
 
 });
-
+}
 //I insert the button eventlistener out of the makeGrid function in order to
 //the re-load of the page
 $("input[type='submit']").on('click', function(event) {
 // We add this Event Delegation method to prevent the site to be re-loaded
-event.preventDefault();
-makeGrid();
 
-}
+makeGrid();
+return false;
+})
+
+});
