@@ -1,7 +1,7 @@
-/ Select color input
+// Select color input
 // Select size input
 // When size is submitted by the user, call makeGrid()
-//We gather all the function into a major function to get it on the document.ready
+// We gather all the function into a major function to get it on the document.ready
 $(document).ready(function() {
 
 function makeGrid() {
@@ -22,14 +22,17 @@ function makeGrid() {
 
 // We create the loop in order to create the rows and columns that
 // will compose the custom grid
-for (let x = 0; x < rows; x++) {
+for (var x = 0; x < rows; x++) {
 // Here we create the rows for the grid
   grid.append("<tr></tr>");
 // Here we create the columns for the grid
-  for (let y = 0; y < columns; y++) {
+  for (var y = 0; y < columns; y++) {
     grid.children().last().append("<td></td>");
-    }
   }
+
+}
+
+
 //Creates the Event listener on click to pick up the color
 grid.on("click", "td",  function () {
   var color = $("input[type='color']").val();
@@ -38,14 +41,22 @@ grid.on("click", "td",  function () {
   $(this).css('background', color);
 
 });
+
 }
+
+event = event || window.event;
+var elem = event.target || event.srcElement;
+
+var submitQ;
+submitQ = $('input[type="submit"]');
 //I insert the button eventlistener out of the makeGrid function in order to
 //the re-load of the page
-$("input[type='submit']").on('click', function(event) {
+submitQ.click(function(event) {
+  event.preventDefault();
 // We add this Event Delegation method to prevent the site to be re-loaded
-
+console.log("llamado a makeGrid.");
 makeGrid();
 return false;
-})
+});
 
 });
